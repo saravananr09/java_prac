@@ -1,0 +1,6 @@
+mysql-connector-java-5.1.49/src/com/mysql/jdbc/SocketFactory.java
+mysql-connector-java-5.1.49/src/com/mysql/jdbc/SocketMetadata.java
+mysql-connector-java-5.1.49/src/com/mysql/jdbc/SocksProxySocketFactory.java
+mysql-connector-java-5.1.49/src/com/mysql/jdbc/StandardLoadBalanceExceptionChecker.java
+mysql-connector-java-5.1.49/src/com/mysql/jdbc/StandardSocketFactory.java
+

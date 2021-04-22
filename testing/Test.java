@@ -1,33 +1,21 @@
-import java.util.Scanner;
+import java.util.*;
+import java.sql.*;
+import 
 
-
-public class Test {
-    public static void main(String[] args)
-    {  
-        Scanner read = new Scanner(System.in);
-        int row, totalrow ,spaces, symbol;
-
-        System.out.print("Enter the no.of row want to print : ");
-        totalrow = read.nextInt();
-
-        for(row = 1; row <= totalrow; row++){
-            //spaces
-            for(spaces = 1; spaces <= (totalrow-row); spaces++)
-                System.out.print(" ");
-                //printing symbol
-                for(symbol = 1; symbol <= ((2*row)-1); symbol++)
-                    System.out.print("$");
-                
-                System.out.print("\n");
-                
-            }
-        
-
-        // System.out.println("Enter the no.of row want to print : ");
-        // row = read.nextInt();
-
-
-
-        System.out.println("from saravanan !");
-    }
+public class DB_CON{
+        public static Connection makeConnection(){
+                Connection con = null;
+                try{
+                        String db_name  = "test";
+                        String db_username  = "saravanan";
+                        String db_password  = "password";
+                        Class.forName("com.mysql.jdbc.Driver");
+                        con=DriverManager.getConnection("jdbc:mysql://localhost/"+db_name+"?socket=/tmp/mysql78.sock?autoReconect=true&useSSL=false,user="+db_username+"&password="+db_password);
+                }catch(Exception e){ 
+                        System.out.println(e);
+                }
+                return con; 
+        }
 }
+
+

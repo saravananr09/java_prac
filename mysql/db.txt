@@ -1,0 +1,5 @@
+driver=/home/saravanan/java_prac/mysql-connector/mysql-connector.jar
+url=com.mysql.cj.jdbc.Driver
+user=saravanan
+password=password
+socket=/tmp/mysql78.sock
